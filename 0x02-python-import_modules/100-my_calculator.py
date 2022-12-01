@@ -6,7 +6,7 @@ if __name__ == "__main__":
     argc = len(argv) - 1
 
     if argc != 3:
-        print("usage: {:s} <a> <operator> <b>" .format(argv[0]))
+        print("Usage: {:s} <a> <operator> <b>" .format(argv[0]))
         exit(1)
     elif argv[2] == '+':
         result = add(int(argv[1]), int(argv[3]))
