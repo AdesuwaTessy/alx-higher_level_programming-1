@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-''' An empty class Square that defines a square: '''
+# 0-square.py - Daniel Seyi
+"""Defines a square """
 
 
 class Square:
-    pass  # This line allows the script to pass class with empty block
+    """Does nothing"""
+    pass
