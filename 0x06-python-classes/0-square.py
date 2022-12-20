@@ -6,7 +6,3 @@
 
 class Square:
     pass  # This line allows the script to pass class with empty block
-
-
-square = Square()
-print(square)
