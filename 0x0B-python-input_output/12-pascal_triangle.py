@@ -1,19 +1,28 @@
 #!/usr/bin/python3
-"""This module defines a Pascal's Triangle function"""
+# -*- coding: utf-8 -*-
+"""
+Created on Tue 10 Jan 2023 19:53:22
+@author: Daniel Seyi
+"""
 
 
 def pascal_triangle(n):
-    """Represents Pascal's Triangle of size n
     """
-    if n <= 0:
-        return []
+    Creates a pascal triangle
+    Attributes:
+        n (int): The n exponent for triangle
+    Return:
+        A matrix with values for the triangle
+    """
+    pascal = []
+    triangle = []
 
-    triangles = [[1]]
-    while len(triangles) != n:
-        tri = triangles[-1]
-        tmp = [1]
-        for i in range(len(tri) - 1):
-            tmp.append(tri[i] + tri[i + 1])
-        tmp.append(1)
-        triangles.append(tmp)
-    return 
+    for i in range(int(n)):
+        new = pascal[:]
+        new.append(1)
+        pos = len(pascal)
+        for i in range(1, pos):
+            new[i] = pascal[i - 1] + pascal[i]
+        pascal = new[:]
+        triangle.append(pascal)
+    return triangle
