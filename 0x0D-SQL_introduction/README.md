@@ -54,3 +54,6 @@ $ cat 3-list_tables.sql | mysql -h localhost -u root -p mysql
   * [8-count_89.sql](./8-count_89.sql): MySQL script that displays the number records with `id =
   89` in the table `first_table`.
 
+##  Author
+
+Daniel Seyi <obisesan.seyid@gmail.com>
